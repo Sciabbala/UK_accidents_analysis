@@ -1,6 +1,6 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
-# Can we predict severity in traffic accidents?
+# What about traffic accidents?
 *Emanuele De Sanctis and Miquel Petit Sierra*
 
 *Bootcamp in Data Analytics, Full-Time, June 2019*
