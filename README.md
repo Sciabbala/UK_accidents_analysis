@@ -1,9 +1,9 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
-# Title of My Project
-*[Your Name]*
+# Can we predict severity in traffic accidents?
+*Emanuele De Sanctis and Miquel Petit Sierra*
 
-*[Your Cohort, Campus & Date]*
+*Bootcamp in Data Analytics, Full-Time, June 2019*
 
 ## Content
 - [Project Description](#project-description)
@@ -21,28 +21,29 @@
 <a name="project-description"></a>
 
 ## Project Description
-Write a short description of your project: 3-5 sentences about what your project is about, why you chose this topic (if relevant), and what you are trying to show. 
+Even though technology improves continuously, specially in the car industry, traffic accidents are one of the main death causes in our society. Given the importance of the topic, we've chosen to analyze a dataset filled with 1.6 million UK traffic accidents with 34 features each.
 
 <a name="hypotheses-/-questions"></a>
 
-## Hypotheses / Questions
-* What data/business/research/personal question you would like to answer? 
-* What is he context for the question and the scientific or business application? 
-* What are the hypotheses you would like to test in order to answer your question?  
-Frame your hypothesis with statistical/data languages (i.e. define Null and Alternative Hypothesis). You can use formulas if you want but that is not required.
+## Hypotheses
+* The severity of an accident is predictable with Machine Learning using other attributes.
+* During the night the accidents tend to be more severe.
+* During the weekend (Friday - Sunday) the number of accidents increases.
 
 <a name="dataset"></a>
 
 ## Dataset
-* Where did you get your data? If you downloaded a dataset (either public or private), describe where you downloaded it and include the command to load the dataset.
-* Did you build your own datset? If so, did you use an API? If so, provide the scripts in your repo.
-* For all types of datasets, provide a description of the size, complexity, and data types included in your dataset, as well as a schema of the tables if necessary.
-* If the question cannot be answered with the available data, why not? What data would you need to answer it better?
+* We got our data from Kaggle, concretely from [here](https://www.kaggle.com/daveianhickey/2000-16-traffic-flow-england-scotland-wales).
+* Our dataset contains data from 2005 to 2014, in total 1.6 million rows and 34 columns.
+* Given the great amount of features, the limit on our analysis is just time.
 
 <a name="cleaning"></a>
 
 ## Cleaning
-Describe your full process of data wrangling and cleaning. Document why you chose to fill missing values, extract outliers, or create the variables you did, etc, as well as your thinking process.
+1. First we will explore our data:
+- Checking and adjusting dtypes.
+- Dealing with null values, we will drop the non-relevant columns with a high amount of null values and the rows for the rest.
+- We will also look for outliers, data that does not make sense and could bias our data and results.
 
 <a name="analysis"></a>
 
@@ -68,24 +69,48 @@ Describe your full process of data wrangling and cleaning. Document why you chos
 <a name="future-work"></a>
 
 ## Future Work
-Address any questions you were unable to answer, or any next steps or future extensions to your project.
+Questions we could try to answer:
+- Which are the deadliest points?
+- Are accidents caused by exceeding the speed limit?
 
 <a name="workflow"></a>
 
 ## Workflow
-Outline the workflow you used in your project. What were the steps?
-How will you test the success of our analysis or algorithm?
+The workflow we followed during the project is the following:
+
+1. We first thought of the topic.
+- Brainstorming and deciding which learning area we wanted to work on.
+2. We looked for data.
+- Luckily we found this huge Kaggle dataset.
+3. Creating the repo, .gitignore and README file.
+- Also organising ourselves with a Trello board.
+4. Downloading and merging data.
+- Our data was divided in three periods we merged using a notebook with pandas.
+5. Data cleaning.
+- Dropping columns, dealing with nan values, adjusting dtypes.
+6. Exploratory analysis.
+- Understanding our data is key to work with it.
+7. First analysis to answer some of our hypothesis.
+- Using descriptive statistics and plots.
+8. Preparing our data of Machine Learning.
+- Scaling the data to not bias our model.
+9. Choosing the model.
+- Looking for the models that best fit our problem.
+10. Training and testing our model.
+- Dividing randomly our data.
+11. Extracting conclusions.
+- Writing the paper on our project and preparing slides for the presentation.
 
 <a name="organization"></a>
 
 ## Organization
-How did you organize yourself? Did you use any tools?
+We used Trello to organise the tasks and Slack to contact each other. Also we worked collaborating in a GitHub repository.
 
 <a name="links"></a>
 
 ## Links
 Include the links to your repository, slides and trello. Feel free to include any other links associated to your project. 
 
-[Repository](https://github.com/)  
-[Slides](https://slides.com/)  
-[Trello](https://trello.com/en)  
+[Repository](https://github.com/miquelpetit/uk-accidents-project)  
+[Slides](https://docs.google.com/presentation/d/1rIYSUW4NWSnklo8LfU6jOi5FVuZxarwkUWxcYiz2CZo/edit?usp=sharing)  
+[Trello](https://trello.com/b/UMhqWOGZ/uk-accidents-final-project)  
