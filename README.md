@@ -80,25 +80,26 @@ The workflow we followed during the project is the following:
 
 1. We first thought of the topic.
 - Brainstorming and deciding which learning area we wanted to work on.
-2. We looked for data.
-- Luckily we found this huge Kaggle dataset.
-3. Creating the repo, .gitignore and README file.
+- We looked for data and luckily we found this huge Kaggle dataset.
+2. Creating the repo, .gitignore and README file.
 - Also organising ourselves with a Trello board.
-4. Downloading and merging data.
-- Our data was divided in three periods we merged using a notebook with pandas.
-5. Data cleaning.
+- Downloading and merging data.
+- As our data was divided in three periods, we merged them using a notebook with pandas.
+3. Data cleaning.
 - Dropping columns, dealing with nan values, adjusting dtypes.
-6. Exploratory analysis.
+4. Exploratory analysis.
 - Understanding our data is key to work with it.
-7. First analysis to answer some of our hypothesis.
+- First analysis to answer some of our hypothesis.
 - Using descriptive statistics and plots.
-8. Preparing our data of Machine Learning.
+5. Preprocessing.
+- preparing our data of Machine Learning.
 - Scaling the data to not bias our model.
-9. Choosing the model.
+6. Machine Learning.
+- Choosing the model.
 - Looking for the models that best fit our problem.
-10. Training and testing our model.
+- Training and testing our model.
 - Dividing randomly our data.
-11. Extracting conclusions.
+7. Extracting conclusions.
 - Writing the paper on our project and preparing slides for the presentation.
 
 <a name="organization"></a>
