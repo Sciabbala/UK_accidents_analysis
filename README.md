@@ -108,5 +108,5 @@ We used Trello to organise the tasks and Slack to contact each other. Also we wo
 Include the links to your repository, slides and trello. Feel free to include any other links associated to your project. 
 
 [Repository](https://github.com/miquelpetit/uk-accidents-project)  
-[Slides](https://docs.google.com/presentation/d/1rIYSUW4NWSnklo8LfU6jOi5FVuZxarwkUWxcYiz2CZo/edit?usp=sharing)  
+[Slides](https://docs.google.com/presentation/d/1718Fid-lpNnXHs1YNf7KJkZa3t0lYy5xCGpo6L_f32c/edit?usp=sharing)  
 [Trello](https://trello.com/b/UMhqWOGZ/uk-accidents-final-project)  
