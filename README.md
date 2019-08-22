@@ -21,6 +21,8 @@
 <a name="project-description"></a>
 
 ## Project Description
+>A total of 36,371 people were killed on Britain's roads between 1999 and 2010.
+
 Even though technology improves continuously, specially in the car industry, traffic accidents are one of the main death causes in our society. Given the importance of the topic, we've chosen to analyze a dataset filled with 1.6 million UK traffic accidents with 34 features each.
 
 <a name="hypotheses-/-questions"></a>
@@ -40,31 +42,24 @@ Even though technology improves continuously, specially in the car industry, tra
 <a name="cleaning"></a>
 
 ## Cleaning
-1. First we will explore our data:
-- Checking and adjusting dtypes.
-- Dealing with null values, we will drop the non-relevant columns with a high amount of null values and the rows for the rest.
-- We will also look for outliers, data that does not make sense and could bias our data and results.
+Our cleaning consisted in selecting the relevant columns for our analysis - as some of them did not give us the information we needed, converting some of the dtypes - to datetime specially, dropping the not-that-relevant columns with a high amount of null values and also the rows containing null values for the rest. We will also look for outliers, data that does not make sense and could bias our data and results. Renaming columns was not necessary but made the work easier, as there were columns with long names like "Did_Police_Officer_Attend_Scene_of_Accident".
+
+Although our cleaning was enough for the exploratory and descriptive analysis, we had to prepare the data for the Machine Learning algorithm. This preprocessing step meant converting the categorical values into booleans and dummy variables. Furthermore, we scaled our numerical data in order to not bias the model.
 
 <a name="analysis"></a>
 
 ## Analysis
-* Overview the general steps you will go through to analyze your data in order to test your hypothesis.
-* Document each step of your data exploration and analysis.
-* Include charts to demonstrate the effect of your work. 
-* If you use ML in your final project, describe your feature selection process.
+Once we had our hypotheses done we started thinking about the hypothesis testing we could use as well as the best way to plot our results. One of the challenges we had during this part of the project was to handle the inbalance in the dataset, as we had only 1% of the accidents being fatal and 85 % being light accidents. Using matplotlib we were able to create beautiful plots which illustrate the situations we wanted to analyze.
 
 <a name="model-training-and-evaluation"></a>
 
 ## Model Training and Evaluation
-*Include this section only if you chose to include ML in your project.*
-* Describe how you trained your model, the results you obtained, and how you evaluated those results.
-
+Even though our main goal at first was to create a good prediction model to predict the severity of an accident given the other features of the accident (like weather, road type and conditions, ...), we realised we need more knowledge on Machine Learning in order to create accurate models for real datasets. We managed to try a few models such as K-Nearest Neighbors, Linear and Logistic Reagressions and Random Forest and look for the best parameters with Grid Search and Random Search. The Random Forest was the best-performing algorithm but still gave us only an accuracy score of 48.7%.
 <a name="conclusion"></a>
 
 ## Conclusion
-* Summarize your results. What do they mean?
-* What can you say about your hypotheses?
-* Interpret your findings in terms of the human-understandable question you try to answer.
+* We got to confirm our hypotheses using descriptive statistics
+* The model we created did better than a random prediction model so we think that with a more 
 
 <a name="future-work"></a>
 
@@ -105,7 +100,7 @@ The workflow we followed during the project is the following:
 <a name="organization"></a>
 
 ## Organization
-We used Trello to organise the tasks and Slack to contact each other. Also we worked collaborating in a GitHub repository.
+We used Trello to organise the tasks and Slack to contact each other. Also we worked collaborating in a GitHub repository. As we were two people some of the work was divided in order to be more time-efficient, for example the presentations slides and the readme, or the exploratory analysis and the preprocessing.
 
 <a name="links"></a>
 
